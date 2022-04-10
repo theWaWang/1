@@ -21,8 +21,8 @@
   参数查找后的模型在调用Random search parameter.py文件后会被保留在./result文件夹中，可以通过查看config文件内容，在Optional parameters.py文件中输入参数进行导入，也可以将Random search parameter.py中训练部分注释掉，然后通过下面编写的模型导入函数进行导入，导入后自动计算并打印分类精度。  
   
  4.参数可视化，在每个.py文件导入模型下方，都有将w1与w2降维为三通道图片从而可视化的函数及操作步骤，画出的第一副图为w1（如需要，自行保存），第二幅图为w2.  
-
-三、文件说明
+  
+三、文件说明  
 上传文件中，Random search parameter.py以及Optional parameters.py均包含网络训练，储存模型，导入模型以及可视化的功能。二者的区别在于Random search parameter.py可以进行参数查找（可自行设置查找范围），储存保留查找后最优的模型，而Optional parameters.py则是通过（可自行设定的）参数进行单个模型的训练，不含有自动参数查找的功能。  
 mnist压缩包中存放mnist数据集，result压缩包中储存了固定隐藏层数为128，（batch、lrmin、lrmax）参数查找的一些结果和模型，文件夹名为00，代表其在测试集准确率为98.00%，文件夹为31，代表其在测试集准确率为98.31%.  
 
