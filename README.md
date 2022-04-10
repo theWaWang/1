@@ -1,10 +1,7 @@
 基于MNIST手写数字图片集的两层神经网络分类器  
 
 一、环境  
-代码为python3版本
-
-
-
+代码为python3版本，需要安装struct、numpy以及matplotlib三个库。  
 
 二、网络架构  
  它包含以下四个部分：    
