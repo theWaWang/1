@@ -26,3 +26,11 @@
 上传文件中，Random search parameter.py以及Optional parameters.py均包含网络训练，储存模型，导入模型以及可视化的功能。二者的区别在于Random search parameter.py可以进行参数查找（可自行设置查找范围），储存保留查找后最优的模型，而Optional parameters.py则是通过（可自行设定的）参数进行单个模型的训练，不含有自动参数查找的功能。  
 mnist压缩包中存放mnist数据集，result压缩包中储存了固定隐藏层数为128，（batch、lrmin、lrmax）参数查找的一些结果和模型，文件夹名为00，代表其在测试集准确率为98.00%，文件夹为31，代表其在测试集准确率为98.31%.  
 
+四、训练步骤  
+  训练开始时，需将.py文件与mnist文件夹放至同一目录下。  
+  若使用Random search parameter.py进行训练，需先将注释线以下的导入模型以及可视化部分注释掉，然后只需更改main函数下的basenum的值，程序就可以训练生成basenum个随机模型，输出各个模型的测试精度以及最优模型精度，并在全部训练结束后绘制最优测试准确率的模型loss以及acc曲线，然后将模型存至同目录下的result文件夹中。
+
+
+
+
+
